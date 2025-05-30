@@ -4,8 +4,10 @@ import Navbar from "./navbar"
 import Listcard from "./component/Listcard"
 import Testcard from "./component/Testcard"
 
+[subscripe,setsub] = useState(false)
 
 import hero from "./assets/react.svg";
+import { useState } from "react"
 
 function app(){
   return <>
@@ -19,7 +21,7 @@ function app(){
 <div className="row">
   <Listcard title ={'hello'} desc ={'i am descrioption'}></Listcard>
   <Listcard title ={"what that"} desc ={'is there any things'}></Listcard>
-  <Listcard title ={'how '} desc ={'then there is it'}></Listcard>
+  <Listcard title ={'how '} desc ={'then there is it'}></Listcard>                                                                               
   <Listcard title ={'fourth one'} desc={'then is it'}></Listcard>
 </div>
 <div className="row">
@@ -33,7 +35,7 @@ function app(){
  <button>posts</button>
 </Testcard>
 <Testcard >
-  <img src={hero} alt="" />
+  <img src={hero                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           } alt="" />
  
 </Testcard>
 </div>
