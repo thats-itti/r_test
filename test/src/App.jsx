@@ -1,44 +1,26 @@
-import Leftbox from "./leftb0x"
-import Rightbox from "./rightbox"
-import Navbar from "./navbar"
-import Listcard from "./component/Listcard"
-import Testcard from "./component/Testcard"
+import Aboutpage from "./Aboutpage";
+import {Routes,Link,Route} from 'react-router-dom';
+import Contacts from "./pages/Contacts";
+import Supportpage from "./pages/Supportpage";
+import Homepage from "./Homepage";
+function App(){
+  return<>
+  <header>
+    <h3>
+      App
+    </h3>
+  </header>
+  <Link to='/'>home</Link>
+  <Link to= '/Contacts'>contacts</Link>
+  <Link to='/Supportpage'>support page</Link>
+  <Link to='/About'>about</Link>
+  <Routes>
+  <Route path="/" element={<Homepage/>}/>
+  <Route path="/About" element={<Aboutpage/>}/>
+  <Route path="/Contacts" element={<Contacts/>}/>
+  <Route path="/Supportpage" element={<Supportpage/>}/>
+  </Routes>
+  </>
+};
 
-[subscripe,setsub] = useState(false)
-
-import hero from "./assets/react.svg";
-import { useState } from "react"
-
-function app(){
-  return <>
-  <Navbar>
-
-  </Navbar>
-  <div className="row">
-    <Leftbox></Leftbox>
-    <Rightbox></Rightbox> 
-</div>
-<div className="row">
-  <Listcard title ={'hello'} desc ={'i am descrioption'}></Listcard>
-  <Listcard title ={"what that"} desc ={'is there any things'}></Listcard>
-  <Listcard title ={'how '} desc ={'then there is it'}></Listcard>                                                                               
-  <Listcard title ={'fourth one'} desc={'then is it'}></Listcard>
-</div>
-<div className="row">
-<Testcard info ={'text-white'}>
-  <h2 className="">hello world</h2>
-  <p>i am good</p>
-</Testcard>
-<Testcard info = {'tie-breaker'}>
- <button>subscribe</button>
- <button>tweets</button>
- <button>posts</button>
-</Testcard>
-<Testcard >
-  <img src={hero                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           } alt="" />
- 
-</Testcard>
-</div>
-</>
-}
-export default app;
+export default App;
