@@ -1,9 +1,9 @@
 function navbar(){
     return <>
-    <div className="row">
-<h3>hello</h3>
+    <div className="row bg=dark">
+        <h3>hello</h3>
 
-</div>
+    </div>
 </>
 
 } 
